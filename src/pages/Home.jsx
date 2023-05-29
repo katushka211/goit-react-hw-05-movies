@@ -32,7 +32,7 @@ const Home = () => {
         </div>
       ) : (
         <div>
-          <h1>Trending today</h1>
+          <h1 className="home-title">Trending today</h1>
           <MoviesGallery movies={movies} state={{ from: location }} />
         </div>
       )}

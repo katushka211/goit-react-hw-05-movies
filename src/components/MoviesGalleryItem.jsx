@@ -18,29 +18,37 @@ export const MoviesGalleryItem = ({ movie }) => {
 
   return (
     <>
-      <div>
-        <img src={poster} alt={movie.original_title} />
-        <div>
-          <h2>
+      <div className="card">
+        <img className="poster" src={poster} alt={movie.original_title} />
+        <div className="movie-info">
+          <h2 className="title">
             {movie.original_title ?? 'Unknown'}({releaseYear})
           </h2>
-          <p>User Score: {userScore}</p>
+          <p className="user-score">User Score: {userScore}</p>
           <h3>Overview</h3>
-          <p>{movie.overview}</p>
+          <p className="overview">{movie.overview}</p>
           <h3>Genres</h3>
-          <p>{genres}</p>
+          <p className="genres">{genres}</p>
         </div>
       </div>
-      <div>
+      <div className="additional-info">
         <h3>Aditional Information</h3>
-        <ul>
-          <li>
-            <Link to="cast" state={{ from: location?.state?.from ?? '/' }}>
+        <ul className="links">
+          <li className="link-item">
+            <Link
+              className="link-details"
+              to="cast"
+              state={{ from: location?.state?.from ?? '/' }}
+            >
               Cast
             </Link>
           </li>
-          <li>
-            <Link to="reviews" state={{ from: location?.state?.from ?? '/' }}>
+          <li className="link-item">
+            <Link
+              className="link-details"
+              to="reviews"
+              state={{ from: location?.state?.from ?? '/' }}
+            >
               Reviews
             </Link>
           </li>

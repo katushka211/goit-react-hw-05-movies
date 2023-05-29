@@ -18,12 +18,12 @@ const Cast = () => {
     getCast(movieId);
   }, [movieId]);
   return (
-    <div>
+    <div className="cast-wrap">
       <h3>Cast</h3>
       {cast.length ? (
-        <ul>
+        <ul className="cast-list">
           {cast.map(actor => (
-            <li key={actor.id}>
+            <li className="actor-item" key={actor.id}>
               {actor.profile_path ? (
                 <img
                   src={`https://image.tmdb.org/t/p/w200${actor.profile_path}`}
@@ -31,7 +31,7 @@ const Cast = () => {
                 />
               ) : (
                 <img
-                  src={`https://via.placeholder.com/200x300?text=No+Image`}
+                  src={`https://via.placeholder.com/180x300?text=No+Image`}
                   alt={`${actor.name} profile`}
                 />
               )}
