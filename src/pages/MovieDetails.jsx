@@ -4,7 +4,7 @@ import { getMovieDetails } from 'services/fetchMovies';
 import { Link } from 'react-router-dom';
 import { IoReturnUpBackOutline } from 'react-icons/io5';
 import { MoviesGalleryItem } from 'components/MoviesGalleryItem';
-import Cast from 'components/Cast';
+import { Outlet } from 'react-router-dom';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -34,7 +34,7 @@ const MovieDetails = () => {
           </button>
         </Link>
         <MoviesGalleryItem movie={selectedMovie} />
-        <Cast />
+        <Outlet />
       </div>
     </main>
   );
