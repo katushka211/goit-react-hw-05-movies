@@ -1,10 +1,10 @@
-import { SearchBar } from 'components/SearchBar';
+import { SearchBar } from 'components/SearchBar/SearchBar';
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { getMoviesByName } from 'services/fetchMovies';
-import { MoviesGallery } from 'components/MoviesGallery';
+import { MoviesGallery } from 'components/MoviesGallery/MoviesGallery';
 import { Loader } from 'components/Loader';
 const Movies = () => {
   const [movies, setMovies] = useState([]);

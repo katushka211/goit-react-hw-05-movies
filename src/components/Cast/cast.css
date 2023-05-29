@@ -1,0 +1,9 @@
+.cast-wrap {
+  margin: 0 16px;
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

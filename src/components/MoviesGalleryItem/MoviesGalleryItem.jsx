@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import './moviesGalleryItem.css';
 export const MoviesGalleryItem = ({ movie }) => {
   const location = useLocation();
 

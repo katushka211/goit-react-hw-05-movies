@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieCredits } from 'services/fetchMovies';
+import './cast.css';
 const Cast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState([]);

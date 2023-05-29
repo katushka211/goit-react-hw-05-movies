@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 import { getMovieDetails } from 'services/fetchMovies';
 import { Link } from 'react-router-dom';
 import { IoArrowBackOutline } from 'react-icons/io5';
-import { MoviesGalleryItem } from 'components/MoviesGalleryItem';
+import { MoviesGalleryItem } from 'components/MoviesGalleryItem/MoviesGalleryItem';
 import { Outlet } from 'react-router-dom';
+import './movieDetails.css';
 
 const MovieDetails = () => {
   const { movieId } = useParams();

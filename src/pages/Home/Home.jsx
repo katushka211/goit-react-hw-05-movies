@@ -1,8 +1,9 @@
-import { MoviesGallery } from 'components/MoviesGallery';
+import { MoviesGallery } from 'components/MoviesGallery/MoviesGallery';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getMoviesTrending } from 'services/fetchMovies';
 import { Loader } from 'components/Loader';
+import './home.css';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);

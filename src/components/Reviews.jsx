@@ -20,7 +20,7 @@ const Reviews = () => {
   }, [movieId]);
 
   return (
-    <div>
+    <div className="reviewWrap">
       <h3>Reviews</h3>
 
       {reviews.length ? (

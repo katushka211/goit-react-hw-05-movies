@@ -1,3 +1,4 @@
+import './searchbar.css';
 export const SearchBar = ({ onSubmit }) => {
   return (
     <div>

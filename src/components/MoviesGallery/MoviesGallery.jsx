@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './moviesGallery.css';
 
 export const MoviesGallery = ({ movies, state }) => {
   return (

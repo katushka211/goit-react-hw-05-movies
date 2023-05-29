@@ -1,0 +1,16 @@
+.gallery {
+  padding: 20px;
+}
+
+.gallery-item {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500px;
+}
+.gallery-item a:hover {
+  color: orange;
+}
+
+.gallery-item a {
+  color: darkslategray;
+}
