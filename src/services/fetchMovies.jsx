@@ -41,7 +41,7 @@ export async function getMovieDetails(id) {
       language: 'en-US',
     };
     const response = await axios.get(`${API_URL}/movie/${id}?`, { params });
-    return response.data.results;
+    return response.data;
   } catch (error) {
     console.log(error);
   }
@@ -56,7 +56,7 @@ export async function getMovieCredits(id) {
     const response = await axios.get(`${API_URL}/movie/${id}/credits?`, {
       params,
     });
-    return response.data.results;
+    return response.data.cast;
   } catch (error) {
     console.log(error);
   }
