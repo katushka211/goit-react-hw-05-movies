@@ -235,3 +235,8 @@ a {
   background-color: rgb(249, 250, 251);
   border: 2px solid orange;
 }
+
+.not-found-text {
+  text-align: center;
+  font-size: 50px;
+}
