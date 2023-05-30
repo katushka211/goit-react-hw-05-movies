@@ -15,7 +15,7 @@ const Home = () => {
     const getMovies = async () => {
       try {
         const movies = await getMoviesTrending();
-        setMovies([...movies]);
+        setMovies(movies);
         setIsLoading(true);
       } catch (error) {
         console.log(error);
