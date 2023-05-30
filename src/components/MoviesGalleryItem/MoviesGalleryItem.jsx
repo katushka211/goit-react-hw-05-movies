@@ -3,11 +3,13 @@ import './moviesGalleryItem.css';
 export const MoviesGalleryItem = ({ movie }) => {
   const location = useLocation();
 
-  let genres = '';
-  if (Array.isArray(movie.genres) && movie.genres.length > 0) {
-    genres = movie.genres.map(genre => genre.name).join(', ');
-  }
-
+  // let genres = '';
+  // if (Array.isArray(movie.genres) && movie.genres.length > 0) {
+  //   genres = movie.genres.map(genre => genre.name).join(', ');
+  // }
+  const genres = movie.genres
+    ? movie.genres.map(genre => genre.name).join(', ')
+    : '';
   const releaseYear = new Date(movie.release_date).getFullYear();
   const poster = movie.poster_path
     ? `https://image.tmdb.org/t/p/w400/${movie.poster_path}`
